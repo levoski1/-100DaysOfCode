@@ -2,24 +2,73 @@
 
 import sys
 
-'''
-add
-view
-delete
-'''
 
-def add_student(filename):
+def view_student(filename):
     try:
         with open(filename,'r') as f:
             lines = f.readlines()
             for line in lines:
                 print(line.strip())
-    except Exception as e: 
-        print(f'{e}: File does\'t exist')
+    except FileNotFoundError: 
+        print('File does\'t exist')
 
-'''
-def view(filename):
+
+def add_student(filename,add):
     try:
-        with open(filename):
-'''
-add_student('text.txt')
+        with open(filename,'a',encoding='utf-8') as f:
+            f.write(add + '\n')
+            print(f"successfully added {add}")
+    except FileNotFoundError:
+        print('File Not found')
+
+
+def delete_student(filename,delete):
+    try:
+        with open(filename,'r',encoding='utf-8') as f:
+            lines = f.readlines()
+            empty_line = []
+
+            for line in lines:
+                if line.strip() != delete:
+                    empty_line.append(line)
+
+                else:
+                    print(f'Sussfully deleted {line}')
+                    del line
+
+        with open(filename,'w',encoding='utf-8') as f:
+            f.writelines(empty_line)   
+            
+
+    except FileNotFoundError:
+        print(f'Sorry! File doesn\'t exist')
+
+
+
+delete_student('ext.txt','somto')
+
+filename = 'ext.txt'
+arg = sys.argv
+
+try:
+    if int(arg[1]) == 1:
+        view_student(filename)
+
+    elif int(arg[1]) == 2:
+        add = input('What do you want to add? ')
+        add_student(filename,add)
+
+    elif int(arg[1]) == 3:
+        delete = input('Who do you want to delete? ')
+        delete_student(filename,delete)
+
+except Exception as e:
+    print(e)
+    print('''
+                    Available Option
+    1. view Student
+    2. Add student
+    3. Delete student
+          
+''')
+
