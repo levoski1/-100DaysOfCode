@@ -40,14 +40,8 @@ def edit_student(filename, remove, replace):
 
     except FileNotFoundError:
         print(f"File '{filename}' not found.")
-    except Exception as e:
-        print(f"An error occurred: {e}")
-
-            
-
-    except FileNotFoundError:
-        print(f'Sorry! File doesn\'t exist')
-
+    
+    
 def delete_student(filename,delete):
     try:
         with open(filename,'r',encoding='utf-8') as f:
@@ -108,4 +102,3 @@ except:
           
 ''')
     print("hint: python file_name 3")
-
