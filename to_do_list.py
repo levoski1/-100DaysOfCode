@@ -19,7 +19,7 @@ def add_student(filename,add):
             f.write(add + '\n')
             print(f"successfully added {add}")
     except FileNotFoundError:
-        print('File Not found')
+        print('Class File Not found')
 
 
 def delete_student(filename,delete):
@@ -41,13 +41,12 @@ def delete_student(filename,delete):
             
 
     except FileNotFoundError:
-        print(f'Sorry! File doesn\'t exist')
+        return
 
 
 
-delete_student('ext.txt','somto')
 
-filename = 'ext.txt'
+filename = 'class.txt'
 arg = sys.argv
 
 try:
@@ -62,8 +61,8 @@ try:
         delete = input('Who do you want to delete? ')
         delete_student(filename,delete)
 
-except Exception as e:
-    print(e)
+except :
+    print('\n')
     print('''
                     Available Option
     1. view Student
@@ -71,4 +70,4 @@ except Exception as e:
     3. Delete student
           
 ''')
-
+    print('hint: python pld.py 3')
