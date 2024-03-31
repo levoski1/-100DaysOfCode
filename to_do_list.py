@@ -60,7 +60,7 @@ def delete_student(filename,delete):
                     
 
                 else:
-                    print(f'Sussfully deleted {LSline}')
+                    print(f'Sussfully deleted {line}')
                     del line
                 
 
@@ -69,15 +69,8 @@ def delete_student(filename,delete):
             
 
     except FileNotFoundError:
-<<<<<<< HEAD
         return
-=======
-        print('Sorry! File doesn\'t exist')
-
->>>>>>> refs/remotes/origin/main
-
-
-
+        
 
 filename = 'class.txt'
 arg = sys.argv
