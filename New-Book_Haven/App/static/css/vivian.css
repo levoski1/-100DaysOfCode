@@ -1,0 +1,374 @@
+
+.home1{
+    background: url("../image/white-background.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.v-row{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.v-content{
+    text-align: center;
+    margin-top: 2rem;
+    width: 40%;
+}
+.v-content h3{
+    font-size: 4.5rem;
+}
+.v-content p{
+    font-size: 1.4rem;
+    line-height: 2;
+    padding: 1rem 0;
+}
+
+.swiper-container{
+    width: 50%;
+    margin-right: 4rem;
+    position: relative;
+}
+.swiper-container .stand{
+    width: 100%;
+    object-fit: contain;
+}
+.swiper1{
+    width: 100%;
+}
+.swiper-wrapper{
+    margin-left: 20px;
+}
+
+.swiper-child{
+    cursor: pointer;
+
+}
+.swiper-child img{
+    transform: scale(1.105);
+}
+.swiper-child img:hover{
+    transform: scale(1);
+    transition: all .499s ease-in-out;
+}
+
+.swiper-wrapper{
+    margin-top: 3rem;
+}
+
+/* featured section */
+.heading h1 span{
+    padding: 5rem 2.4rem;
+}
+
+.featured-slider{
+    margin-top: 3rem;
+}
+.box{
+    margin: 2rem 0;
+    position: relative;
+    overflow: hidden;
+    border: 0.1rem solid rgba(0,0,0,0.1);
+    text-align: center;
+}
+.box:hover{
+    border: 0.1rem solid #444;
+}
+.box:hover .image{
+    transform: translateY(5rem);
+    cursor: pointer;
+}
+.box:hover .icons{
+    transform: translateY(0);
+    margin-bottom: 0;
+}
+.icons{
+    padding-bottom:  0.1rem solid #444;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    z-index: 1;
+    transform: translateY(-100%);
+    border: 0.1rem solid rgba(0,0,0,0.1);
+}
+.icons a{
+    font-size: 2.2rem;
+    padding: 1.3rem 1.5rem;
+    color: #444;
+}
+.image{
+    padding: 1rem;
+    background: linear-gradient(15deg, #eee 30%, #eee 30.1%);
+}
+
+.image img{
+    height: 25rem;
+}
+.content{
+    background: #eee;
+    padding: 1.5rem;
+    color: #444
+}
+.content h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.content .price{
+    font-size: 2.2rem;
+    padding-top: 1rem;
+}
+.content .price span{
+    font-size: 1.5rem;
+    text-decoration: line-through;
+}
+.content .btn{
+    padding: 1rem 3.5rem;
+    margin-top: 1.5rem;
+}
+
+
+
+
+.newletter{
+    background: url(../images/letter-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 50rem;
+}
+
+.newletter form{
+    max-width: 55rem;
+    margin: auto;
+    text-align: center;
+    padding: 20rem 0;
+}
+
+.newletter form h3{
+    font-size: 2.2rem;
+    color: #fff;
+    padding: 0.7rem;
+    font-weight: normal;
+}
+
+.newletter form .box{
+    width: 100%;
+    margin: 0.7rem 0;
+    padding: 1rem 1.2rem;
+    font-size: 1.5rem;
+    color: var(--black);
+    border-radius: 0.5rem;
+    text-transform: none;
+}
+
+@media(max-width:768px){
+    .newsletter{
+        background-position: right;
+    }
+
+    .newletter form{
+        margin-left: 0;
+        max-width: 100%;
+    }
+}
+
+/*----- arrivals section --------*/
+
+.arrivals .arrivals-slider .box{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+    border: var(--border);
+    margin: 1rem 0;
+    margin-top: 3rem;
+}
+
+.arrivals .arrivals-slider .box:hover{
+    border: var(--border-hover);
+}
+
+.arrivals .arrivals-slider .box .image img{
+    height: 15rem;
+}
+
+.arrivals .arrivals-slider .box .content h3{
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.arrivals .arrivals-slider .box .content .price{
+    font-size: 2.2rem;
+    color: var(--black);
+    padding-bottom: 0.5rem;
+}
+
+.arrivals .arrivals-slider .box .content .price span{
+    font-size: 1.5rem;
+    color: var(--light-color);
+    text-decoration: line-through;
+}
+
+.arrivals .arrivals-slider .box .content .stars{
+    color: var(--blue);
+    font-size: 1.5rem;
+}
+
+  
+.deal{
+    background: #f3f3f3;
+    display: flex;
+    align-items:center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.deal .content{
+    flex: 1 1 42rem;
+}
+
+.deal .image{
+    flex: 1 1 42rem;
+}
+
+.deal .image img{
+    width: 100%;
+}
+
+.deal .content h3{
+    color:var(--blue);
+    font-size: 2.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.deal .content h1{
+    color: var(--black);
+    font-size: 4rem;
+}
+
+.deal .content p{
+    padding: 1rem 0;
+    color: var(light-color);
+    font-size: 1.4rem;
+    line-height: 2;
+}
+
+
+
+
+
+/* this part is not written by vivian */
+
+/*------ review section --------*/
+
+.reviews .reviews-slider{
+    padding-top: 0.8rem;
+}
+.reviews .reviews-slider .box {
+    border: var(--border);
+    padding: 2rem;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.reviews .reviews-slider .box:hover{
+    border: var(--border-hover);
+}
+
+.reviews .reviews-slider .box h3{
+    color: var(--black);
+    font-size: 2.2rem;
+    padding: 1rem 0;
+    line-height: 2;
+}
+
+.reviews .reviews-slider .box img{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.reviews .reviews-slider .box p{
+    color: var(--light-color);
+    font-size: 1.4rem;
+    padding: 1rem 0;
+    line-height: 2;
+}
+
+.reviews .reviews-slider .box .stars i{
+    font-size: 1.7rem;
+    color: var(--blue);
+}
+
+.footer > div.box-container .box{
+    border: none !important;
+}
+
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    padding: 1rem 0;
+}
+
+.footer .box-container .box h3{
+    font-size: 2.2rem;
+    color: var(--black);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a{
+    display: block;
+    font-size: 1.4rem;
+    color: var(--light-color);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a i{
+    color: var(--blue);
+    padding-right: 0.5rem;
+}
+
+.footer .box-container .box a:hover i{
+    padding-right: 2rem;
+}
+
+.footer .box-container .box .map{
+    width: 100%;
+}
+
+.footer .share{
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.footer .share a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: #fff;
+    background-color: var(--blue);
+    margin: 0 0 0.3rem;
+    border-radius: 50%;
+    padding:1.2rem;
+}
+
+.footer .credit{
+    border-top: var(--border);
+    margin-top: 2rem;
+    padding: 0.1rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: var(--light-color);
+    text-align: center;
+}
+
+.footer .credit span{
+    color:var(--blue);
+}
