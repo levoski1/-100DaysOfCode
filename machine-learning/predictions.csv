@@ -1,0 +1,16 @@
+text,cleaned_text,predicted_label
+Bought a new laptop,bought new laptop,EXPENSES
+Monthly utility bill payment,monthly utility bill payment,EXPENSES
+Dinner at an Italian restaurant,dinner italian restaurant,EXPENSES
+Renewed gym membership,renewed gym membership,EXPENSES
+Paid for car repair,paid car repair,EXPENSES
+Credit card bill payment,credit card bill payment,DEBT
+Paid off a small personal loan,paid small personal loan,DEBT
+Mortgage payment for the month,mortgage payment month,DEBT
+Settled outstanding student loan,settled outstanding student loan,DEBT
+Loan repayment to the bank,loan repayment bank,DEBT
+Received annual bonus from company,received annual bonus company,INCOME
+Sold an old bicycle,sold old bicycle,INCOME
+Freelance graphic design payment,freelance graphic design payment,INCOME
+Won a cash prize in a contest,cash prize contest,INCOME
+Dividend from stock investments,dividend stock investments,INCOME
